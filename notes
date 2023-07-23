@@ -1,0 +1,5 @@
+pip3 install pipenv
+
+-> pipenv is a dependency management tool for installing our application dependencies in virtual environment.
+
+-> By doing this way our app dependencies will not clash with other app dependencies
