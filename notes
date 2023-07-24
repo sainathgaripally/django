@@ -6,3 +6,84 @@ pip3 install pipenv
 
 Creating first django project
 ------------------------------------
+pipenv install django
+
+-> It will create a virtual environment for our project and installed django in that venv
+-> We need to activate this venv, so will use the python inside venv by usning below command
+
+pipenv shell 
+
+-> Use django-admin startproject to start the project, django-admin is a command line utility tool
+
+django-admin startproject storefront .
+
+__init__.py -> determines the storeformt directory has a package
+settings.py -> define our application settings
+urls.py     -> define urls of our application 
+wsgi.py & asgi.py -> used for deployment
+manage.py   -> Its a wrapper around django-admin
+
+-> We use manage.py instead of django-admin because it takes the settings of our project into account
+Ex we can run our server by using below command, however we will be getting error ( Requested setting DEBUG, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.). This is becaus our django-admin does not know abt settings of our project
+
+django-admin runserver
+
+-> So use below command 
+
+python manage.py runserver 8000
+
+Creating your first app
+-------------------------------
+-> Every django project is a collection of apps providing each set of functionality
+
+-> Every django project has default apps which can be found in settings.py file under INSTALLED_APPS
+
+INSTALLED_APPS = [
+    'django.contrib.admin',             -> Which gives admin interface or manages the date
+    'django.contrib.auth',              -> For authenticating users
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',          -> Legacy we dont need sessions anymore can be deleted
+    'django.contrib.messages',          -> displaying one time messages for th user
+    'django.contrib.staticfiles',       -> Serving static files 
+    'playground'                        -> Our custom app
+]
+
+python3 manage.py startapp playground 
+
+-> Once above command gets executed, it gives djago app folder structure 
+migrations folder       -> Generation of databse tables
+admin.py                -> Where we define how the admin interface for the app looks like
+apps.py                 -> Configuration of the app
+models.py               -> Defines Models classes for the app, we use model classes to pull
+                           up the data from database
+tests.py                -> Writing unit tests
+views.py                -> Where we define our views (request handler)
+
+-> Once app is created, we need to add our custom app in settings.py file unser installed_apps like defined above
+
+Writing Views
+----------------
+-> A view fn is a fn which takes a request and returns response i.e., request handler
+
+from django.http import HttpResponse
+
+def say_hello(request):
+  #This fn can pull data transform data etc
+  return HttpsResponse("Hello World")
+
+-> Now we need to map this view to our url. So wn url receives request, this fn will be called
+
+Mapping URL's to views
+------------------------------
+
+-> Create any file (urls.py) in app directory i.e., playground
+
+from django.urls import path
+from . imprt views.py
+
+#The below is called URLConf module, takes 1st arg as route, 2nd arg as reference to view function
+urlpatterns = [
+    path("playground/hello, views.say_hello)
+]
+
+-> Now go to main urls.py file and call this view in urlpatterns variable also pass include function
