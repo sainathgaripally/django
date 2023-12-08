@@ -36,7 +36,7 @@ for key, value in new_name.items():
         variable_name = values[0].strip()
         variable_value = values[1].strip()
         if(key == variable_name):
-            myindex = new_list.index(variable_name)
+            myindex = new_list.index(line)
             print(myindex)
 
 
