@@ -26,7 +26,7 @@ print("########################################")
 #         if(key == temp):
 #             print(text)
 
-for key in new_name.items()
+for key in new_name.items():
     for text in tfdata:
         values = text.split('=')
         variable_name = values[0].strip()
