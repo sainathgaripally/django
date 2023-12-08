@@ -25,5 +25,5 @@ print("########################################")
 #         if(key == temp):
 #             print(text)
 
-x = text[0]
+x = tfdata[0]
 print(x)
