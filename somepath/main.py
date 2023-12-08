@@ -37,7 +37,7 @@ for key, value in new_name.items():
         variable_value = values[1].strip()
         if(key == variable_name):
             myindex = new_list.index(line)
-            print(myindex)
+            line.replace(variable_value, value) 
 
 
 print(new_list)
