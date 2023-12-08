@@ -45,10 +45,11 @@ print(new_list)
 wow = ["ab", "abc"]
 t1 = "a"
 t2 = "gg"
-ttt = wow[0].replace(t1, t2)
-wow[0] = ttt
-# for i in wow:
-#     wow[i] = wow[i].replace(t1, t2)
+# ttt = wow[0].replace(t1, t2)
+# wow[0] = ttt
+for i in wow:
+    ttt = wow[i].replace(t1, t2)
+    wow[i] = ttt
 
 print(wow)
 
