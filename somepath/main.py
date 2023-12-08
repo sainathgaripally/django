@@ -1,5 +1,6 @@
 import json 
 import os
+import re
  
 manifest_path = './values.json'
 with open(manifest_path,'r') as manifest_file:
@@ -26,4 +27,6 @@ print("########################################")
 #             print(text)
 
 x = tfdata[0]
-print(x)
+match = re.search(r'(\w+)\s*=\s*["\']([^"\']+)["\']', x)
+print(match.group(1))
+print(match.group(2))
