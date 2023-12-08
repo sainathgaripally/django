@@ -26,14 +26,14 @@ print("########################################")
 #         if(key == temp):
 #             print(text)
 
-# for text in tfdata:
-#     match = re.search(r'(\S+)\s*=\s*(\S+)', text)
-#     variable_name = match.group(1)
-#     variable_value = match.group(2)
-#     print(match.group(1))
-#     print(match.group(2))
+for text in tfdata:
+    values = text.strip('=')
+    variable_name = values.strip()
+    variable_value = values.strip()
+    print(variable_name)
+    print(variable_value)
 
-x = tfdata[0]
-values = x.split('=')
-print(values[0] + "my value")
-print(values[0].strip() + "after trimmed")
+# x = tfdata[0]
+# values = x.split('=')
+# print(values[0] + "my value")
+# print(values[0].strip() + "after trimmed")
