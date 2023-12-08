@@ -35,4 +35,4 @@ print("########################################")
 
 x = tfdata[0]
 values = x.split('=')
-print(values)
+print(values.trim())
