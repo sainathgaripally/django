@@ -20,7 +20,7 @@ print(tfdata)
 
 print("########################################")
 
-for key in new_name.items():
+for key, value in new_name.items():
     print(key)
     for text in tfdata:
         values = text.split('=')
