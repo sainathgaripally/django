@@ -46,7 +46,7 @@ m = ["ab", "abc"]
 for x in m:
     a = "a"
     b = "gg"
-    x.replace(a, b)
+    m[x] = x.replace(a, b)
 
 print(m)
 
