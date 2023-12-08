@@ -26,6 +26,8 @@ for key, value in new_name.items():
         values = text.split('=')
         variable_name = values[0].strip()
         variable_value = values[1].strip()
+        print(variable_name)
+        print(variable_value)
         if(key == variable_name):
-            print(variable_name)
+            print(f"Its wow" {variable_name})
 
