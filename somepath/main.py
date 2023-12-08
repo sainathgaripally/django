@@ -42,11 +42,11 @@ for key, value in new_name.items():
 
 print(new_list)
 
-m = ["ab", "abc"]
+wow = ["ab", "abc"]
 t1 = "a"
 t2 = "gg"
-for x in m:
-    m[x] = x.replace(t1, t2)
+for i in wow:
+    wow[i] = i.replace(t1, t2)
 
-print(m)
+print(wow)
 
