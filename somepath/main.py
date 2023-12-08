@@ -13,6 +13,6 @@ for key, value in new_name.items():
 
 tfdatapath = '/home/azureuser/python_json_tfvars/django/modules/terr.tfvars'
 with open(tfdatapath,'r') as tfvarfile:
-    tfdata = json.load(tfvarfile)
+    tfdata = tfvarfile.readlines()
 
 print(tfdata)
