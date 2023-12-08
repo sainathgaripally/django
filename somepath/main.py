@@ -31,15 +31,15 @@ print("########################################")
 print(new_list)
 
 for key, value in new_name.items():
-    for text in tfdata:
-        values = text.split('=')
+    for line in new_list:
+        values = line.split('=')
         variable_name = values[0].strip()
         variable_value = values[1].strip()
         if(key in variable_name):
             print(variable_name)
             print(variable_value)
-            print("Yes")
 
+print(new_list)
 
 
 
