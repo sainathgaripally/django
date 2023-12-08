@@ -27,9 +27,9 @@ print("########################################")
 #             print(text)
 
 for text in tfdata:
-    values = text.strip('=')
-    variable_name = values[0]
-    variable_value = values[1]
+    values = text.split('=')
+    variable_name = values[0].strip()
+    variable_value = values[1].strip()
     print(variable_name)
     print(variable_value)
 
