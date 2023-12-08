@@ -11,7 +11,7 @@ new_name = data["regions"]["region"]["resource_group"]
 for key, value in new_name.items():
     print(f"Key: {key}, Value: {value}")
 
-tfdatapath = './django/modules/terr.tfvars'
+tfdatapath = '/home/azureuser/python_json_tfvars/django/modules/terr.tfvars'
 with open(tfdatapath,'r') as tfvarfile:
     tfdata = json.load(tfvarfile)
 
