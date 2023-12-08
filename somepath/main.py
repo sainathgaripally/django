@@ -37,19 +37,20 @@ for key, value in new_name.items():
         variable_value = values[1].strip()
         if(key == variable_name):
             # myindex = new_list.index(line)
-            line.replace(variable_value, value) 
+            # line.replace(variable_value, value) 
+            new_list[myindex] = new_list[index].replace(variable_value, value)
 
 
 print(new_list)
 
-wow = ["ab", "abc"]
-t1 = "a"
-t2 = "gg"
-# ttt = wow[0].replace(t1, t2)
-# wow[0] = ttt
-for i in range(len(wow)):
-    ttt = wow[i].replace(t1, t2)
-    wow[i] = ttt
+# wow = ["ab", "abc"]
+# t1 = "a"
+# t2 = "gg"
+# # ttt = wow[0].replace(t1, t2)
+# # wow[0] = ttt
+# for i in range(len(wow)):
+#     ttt = wow[i].replace(t1, t2)
+#     wow[i] = ttt
 
-print(wow)
+# print(wow)
 
