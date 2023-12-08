@@ -35,8 +35,8 @@ for key, value in new_name.items():
         values = line.split('=')
         variable_name = values[0].strip()
         variable_value = values[1].strip()
-        if(key in values[0]):
-            myindex = new_list.index(values[0])
+        if(key == variable_name):
+            myindex = new_list.index(variable_name)
             print(myindex)
 
 
