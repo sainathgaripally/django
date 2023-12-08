@@ -44,9 +44,9 @@ print(new_list)
 
 m = ["ab", "abc"]
 for x in m:
-    a = "a"
-    b = "gg"
-    m[x] = m[x].replace(a, b)
+    t1 = "a"
+    t2 = "gg"
+    m[x] = m[x].replace(t1, t2)
 
 print(m)
 
