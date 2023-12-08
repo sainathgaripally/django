@@ -35,6 +35,6 @@ for key, value in new_name.items():
 print(new_list)
 
 with open('newfile', 'w') as w:
-    for text in tfdata:
+    for text in new_list:
         w.write(text)
 
