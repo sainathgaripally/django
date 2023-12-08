@@ -16,7 +16,7 @@ tfdatapath = '/home/azureuser/python_json_tfvars/django/modules/terr.tfvars'
 with open(tfdatapath,'r') as tfvarfile:
     tfdata = tfvarfile.readlines()
     new_list =  []
-    for line in new_list:
+    for line in tfdata:
         new_list.append(line)
         
 
