@@ -24,10 +24,6 @@ print(tfdata)
 
 print("########################################")
 
-# with open('newfile', 'w') as w:
-#     for text in new_list:
-#         w.write(text)
-
 print(new_list)
 
 for key, value in new_name.items():
@@ -37,20 +33,13 @@ for key, value in new_name.items():
         variable_value = values[1].strip()
         if(key == variable_name):
             myindex = new_list.index(line)
-            # line.replace(variable_value, value) 
             new_list[myindex] = new_list[myindex].replace(variable_value, value)
-
 
 print(new_list)
 
-# wow = ["ab", "abc"]
-# t1 = "a"
-# t2 = "gg"
-# # ttt = wow[0].replace(t1, t2)
-# # wow[0] = ttt
-# for i in range(len(wow)):
-#     ttt = wow[i].replace(t1, t2)
-#     wow[i] = ttt
+with open('newfile', 'w') as w:
+    for text in new_list:
+        w.write(text)
 
-# print(wow)
+
 
