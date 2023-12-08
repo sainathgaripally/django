@@ -1,0 +1,21 @@
+{
+    "global":
+    {
+      "globalfrontdoor": {
+        "region": "<<region_name>>",
+        "endpoint": "value",
+        "domains":"value"
+   
+    }
+    },
+    "regions":
+    {  
+      "region": {
+         "resource_group":{
+            "resource_name":"demo02.rg",
+            "location": "west us"        
+          }
+      }     
+   }
+       
+}
