@@ -24,6 +24,10 @@ print(tfdata)
 
 print("########################################")
 
+with open('newfile', 'w') as w:
+    for text in new_list:
+        w.write(text)
+
 for key, value in new_name.items():
     for text in tfdata:
         values = text.split('=')
@@ -31,10 +35,7 @@ for key, value in new_name.items():
         variable_value = values[1].strip()
         if(key == variable_name):
             print(variable_name)
+            print(variable_value)
 
-print(new_list)
 
-with open('newfile', 'w') as w:
-    for text in new_list:
-        w.write(text)
 
