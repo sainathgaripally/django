@@ -46,7 +46,7 @@ m = ["ab", "abc"]
 t1 = "a"
 t2 = "gg"
 for x in m:
-    m[x].replace(t1, t2)
+    m[x] = x.replace(t1, t2)
 
 print(m)
 
