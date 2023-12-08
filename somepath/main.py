@@ -36,11 +36,17 @@ for key, value in new_name.items():
         variable_name = values[0].strip()
         variable_value = values[1].strip()
         if(key == variable_name):
-            myindex = new_list.index(line)
+            # myindex = new_list.index(line)
             line.replace(variable_value, value) 
 
 
 print(new_list)
 
+m = ["ab", "abc"]
+for x in m:
+    a = "a"
+    b = "gg"
+    x.replace(a, b)
 
+print(x)
 
