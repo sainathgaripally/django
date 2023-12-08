@@ -12,7 +12,7 @@
     {  
       "region": {
          "resource_group":{
-            "resource_name":"demo02.rg",
+            "resources":"demo02.rg",
             "location": "west us"        
           }
       }     
