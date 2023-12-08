@@ -17,7 +17,13 @@ with open(tfdatapath,'r') as tfvarfile:
 
 print(tfdata)
 
-print("kmkrmk")
+print("########################################")
 
-for key, value in new_name.items():
-    print(key)
+# for key in new_name.items():
+#     for text in key:
+#         temp = re.search(r)
+#         if(key == temp):
+#             print(text)
+
+for text in tfdata:
+    print(tfdata)
