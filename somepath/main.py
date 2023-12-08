@@ -16,3 +16,8 @@ with open(tfdatapath,'r') as tfvarfile:
     tfdata = tfvarfile.readlines()
 
 print(tfdata)
+
+print("kmkrmk")
+
+for key, value in new_name.items():
+    print(key)
