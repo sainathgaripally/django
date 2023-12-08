@@ -20,13 +20,8 @@ print(tfdata)
 
 print("########################################")
 
-# for key in new_name.items():
-#     for text in key:
-#         temp = re.search(r)
-#         if(key == temp):
-#             print(text)
-
 for key in new_name.items():
+    print(key)
     for text in tfdata:
         values = text.split('=')
         variable_name = values[0].strip()
