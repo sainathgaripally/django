@@ -29,7 +29,7 @@ for key, value in new_name.items():
         if(key == variable_name):
             print(variable_name)
 
-with open(newfile, w) as w:
+with open(newfile, 'w') as w:
     for text in tfdata:
         w.write(text)
 
