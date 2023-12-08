@@ -47,7 +47,7 @@ t1 = "a"
 t2 = "gg"
 # ttt = wow[0].replace(t1, t2)
 # wow[0] = ttt
-for i in wow:
+for i in range(len(wow)):
     ttt = wow[i].replace(t1, t2)
     wow[i] = ttt
 
