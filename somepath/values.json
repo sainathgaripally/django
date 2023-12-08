@@ -13,7 +13,8 @@
       "region": {
          "resource_group":{
             "resources":"demo02.rg",
-            "location": "west us"        
+            "location": "west us",
+            "rollnum": 5       
           }
       }     
    }
