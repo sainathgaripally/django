@@ -26,7 +26,11 @@ print("########################################")
 #         if(key == temp):
 #             print(text)
 
-x = tfdata[0]
-match = re.search(r'(\S+)\s*=\s*(\S+)', x)
-print(match.group(1))
-print(match.group(2))
+for text in tfdata:
+    match = re.search(r'(\S+)\s*=\s*(\S+)', text)
+    variable_name = match.group(1)
+    variable_value = match.group(2)
+    print(match.group(1))
+    print(match.group(2))
+# x = tfdata[0]
+# match = re.search(r'(\S+)\s*=\s*(\S+)', x)
