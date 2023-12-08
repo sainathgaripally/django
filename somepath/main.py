@@ -48,5 +48,5 @@ for x in m:
     b = "gg"
     x.replace(a, b)
 
-print(x)
+print(m)
 
