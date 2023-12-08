@@ -35,4 +35,5 @@ print("########################################")
 
 x = tfdata[0]
 values = x.split('=')
-print(values.trim())
+print(values[0] + "my value")
+print(values[0].trim() + "after trimmed")
