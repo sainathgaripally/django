@@ -27,6 +27,6 @@ print("########################################")
 #             print(text)
 
 x = tfdata[0]
-match = re.search(r'(\w+)\s*=\s*["\']([^"\']+)["\']', x)
+match = re.search(r'(\S+)\s*=\s*(\S+)', x)
 print(match.group(1))
 print(match.group(2))
