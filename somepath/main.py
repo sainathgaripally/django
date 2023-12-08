@@ -16,6 +16,9 @@ tfdatapath = '/home/azureuser/python_json_tfvars/django/modules/terr.tfvars'
 with open(tfdatapath,'r') as tfvarfile:
     tfdata = tfvarfile.readlines()
     new_list =  []
+    for line in new_list:
+        new_list.append(line)
+        
 
 print(tfdata)
 
@@ -28,6 +31,8 @@ for key, value in new_name.items():
         variable_value = values[1].strip()
         if(key == variable_name):
             print(variable_name)
+
+print(new_list)
 
 with open('newfile', 'w') as w:
     for text in tfdata:
