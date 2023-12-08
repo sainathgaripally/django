@@ -21,13 +21,13 @@ print(tfdata)
 print("########################################")
 
 for key, value in new_name.items():
-    print(key+"printed")
+    # print(key+"printed")
     for text in tfdata:
         values = text.split('=')
         variable_name = values[0].strip()
         variable_value = values[1].strip()
-        print(variable_name)
-        print(variable_value)
+        # print(variable_name)
+        # print(variable_value)
         if(key == variable_name):
             print(variable_name + "its wow")
 
