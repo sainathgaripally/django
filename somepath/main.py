@@ -4,10 +4,11 @@ import re
  
 manifest_path = './values.json'
 with open(manifest_path,'r') as manifest_file:
-    data = json.loads(manifest_file, indent=2)
-print(data)
+    data = json.load(manifest_file)
     
 new_name = data["regions"]["region"]["resource_group"]
+
+print(new_name)
 
 for key, value in new_name.items():
     print(f"Key: {key}, Value: {value}")
