@@ -43,8 +43,8 @@ for key, value in new_name.items():
 print(new_list)
 
 m = ["ab", "abc"]
-    t1 = "a"
-    t2 = "gg"
+t1 = "a"
+t2 = "gg"
 for x in m:
     m[x] = m[x].replace(t1, t2)
 
